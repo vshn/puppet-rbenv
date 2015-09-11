@@ -21,6 +21,6 @@ class rbenv::dependencies::ubuntu {
   if ! defined(Package['libxml2-dev'])      { package { 'libxml2-dev':      ensure => installed } }
   if ! defined(Package['libxslt1-dev'])     { package { 'libxslt1-dev':     ensure => installed, alias =>'libxslt-dev' } }
   if ! defined(Package['autoconf'])         { package { 'autoconf':         ensure => installed } }
-  if ! defined(Package['git'])              { package { 'git':              ensure => installed, name => 'git-core' } }
+  if ! defined(Package['git'])              { package { 'git':              ensure => installed } }
   if ! defined(Package['curl'])             { package { 'curl':             ensure => installed } }
 }
